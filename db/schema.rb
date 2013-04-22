@@ -11,11 +11,24 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130421200114) do
+ActiveRecord::Schema.define(:version => 20130422195659) do
 
   create_table "cad_local_trabalho", :force => true do |t|
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.string   "tipo_local", :null => false
+    t.string   "nome"
+    t.string   "cep"
+    t.string   "endereco"
+    t.string   "numero"
+    t.string   "bairro"
+    t.string   "cidade"
+    t.string   "estado"
+    t.string   "telefone"
+    t.string   "email"
+    t.string   "site"
+    t.string   "latitude"
+    t.string   "longitude"
   end
 
   create_table "roles", :force => true do |t|
@@ -43,6 +56,7 @@ ActiveRecord::Schema.define(:version => 20130421200114) do
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
     t.string   "name"
+    t.string   "avatar"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
