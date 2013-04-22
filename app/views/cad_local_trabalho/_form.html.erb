@@ -1,0 +1,6 @@
+<%= simple_form_for @trabalho, :html => {:method => :put, :class => 'form-horizontal' } do |f| %>
+  <%= f.error_messages %>
+  <%= f.input :tipo_local %>
+
+  <%= f.button :submit %>
+<% end %>

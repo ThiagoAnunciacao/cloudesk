@@ -1,0 +1,2 @@
+module CadLocalTrabalhoHelper
+end
