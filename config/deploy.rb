@@ -1,5 +1,7 @@
 require "bundler/capistrano"
 
+set :bundle_cmd, 'source $HOME/.bash_profile && bundle'
+
 set :scm,             :git
 set :repository,      "git@github.com:ThiagoAnunciacao/cloudesk.git"
 set :branch,          "origin/master"
