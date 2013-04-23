@@ -1,1 +1,8 @@
-teste
+<h3>Lista de Locais de Trabalho</h3>
+
+<% @cad_local_trabalhos.each do |cad_local_trabalho| %>
+	Tipo Local: 
+	<%= cad_local_trabalho.tipo_local %><br/>
+	Nome: 
+	<%= cad_local_trabalho.nome %> <br/><br/>
+<% end %>

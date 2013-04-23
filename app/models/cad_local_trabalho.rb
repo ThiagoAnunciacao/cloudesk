@@ -1,4 +1,19 @@
-class CadLocalTrabalho < ActiveRecord::Base
-  # attr_accessible :title, :body
-  set_table_name "cad_local_trabalho"
+class CadLocalTrabalho
+	include Mongoid::Document
+
+	store_in collection: "cad_local_trabalho"
+
+	field :tipo_local
+	field :nome
+	field :cep
+	field :endereco
+	field :numero
+	field :bairro
+	field :cidade
+	field :estado
+	field :telefone
+	field :email
+	field :site
+	field :latitude
+	field :longitude
 end

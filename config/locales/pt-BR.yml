@@ -1,0 +1,8 @@
+pt-BR:
+  helpers:
+    submit:
+      create: "Salvar"
+      update: "Editar"
+      submit: "Enviar"
+  create:
+    success: "Criado com Sucesso!"
