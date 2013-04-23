@@ -28,3 +28,9 @@ gem "binding_of_caller", ">= 0.7.1", :group => :development, :platforms => [:mri
 gem "mini_magick"
 gem "carrierwave"
 gem "cover_me", '>= 1.2.0', :group => :test
+
+gem "unicorn"
+
+group :development do
+  gem "capistrano"
+end
