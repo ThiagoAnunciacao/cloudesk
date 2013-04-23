@@ -1,7 +1,12 @@
 source 'https://rubygems.org'
 gem 'rails', '3.2.13'
+<<<<<<< HEAD
 gem 'mysql2'
 gem 'fog'
+=======
+gem "mongoid", "~> 3.0.0"
+gem "mysql2"
+>>>>>>> 3ff5b08f3671801bf1d81b83669e2e66cd44fda3
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
@@ -23,9 +28,13 @@ gem "simple_form", ">= 2.1.0"
 gem "quiet_assets", ">= 1.0.2", :group => :development
 gem "figaro", ">= 0.6.3"
 gem "better_errors", ">= 0.7.2", :group => :development
+<<<<<<< HEAD
 gem "binding_of_caller", ">= 0.7.1", :group => :development, :platforms => [:mri_19, :rbx]
 gem "mongoid"
 gem "mini_magick"
 gem "rmagick"
 gem "carrierwave"
 gem "cover_me", '>= 1.2.0', :group => :test
+=======
+gem "binding_of_caller", ">= 0.7.1", :group => :development, :platforms => [:mri_19, :rbx]
+>>>>>>> 3ff5b08f3671801bf1d81b83669e2e66cd44fda3

@@ -1,6 +1,18 @@
-<%= simple_form_for @trabalho, :html => {:method => :put, :class => 'form-horizontal' } do |f| %>
-  <%= f.error_messages %>
+<%= simple_form_for @cad_local_trabalho, url: cad_local_trabalho_path, :html => {:class => 'form-horizontal' } do |f| %>
+ 
   <%= f.input :tipo_local %>
+  <%= f.input :nome %>
+  <%= f.input :cep %>
+  <%= f.input :endereco %>
+  <%= f.input :numero %>
+  <%= f.input :bairro %>
+  <%= f.input :cidade %>
+  <%= f.input :estado %>
+  <%= f.input :telefone %>
+  <%= f.input :email %>
+  <%= f.input :site %>
+  <%= f.input :latitude %>
+  <%= f.input :longitude %>
 
-  <%= f.button :submit %>
+  <%= f.submit "Salvar", :class => 'btn-primary' %>
 <% end %>
