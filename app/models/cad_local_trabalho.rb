@@ -14,6 +14,7 @@ class CadLocalTrabalho
 	field :telefone
 	field :email
 	field :site
+	field :celular
 	field :latitude
 	field :longitude
 end
