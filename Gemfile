@@ -29,7 +29,9 @@ gem "mini_magick"
 gem "carrierwave"
 gem "cover_me", '>= 1.2.0', :group => :test
 
-gem "unicorn"
+platforms :ruby do # linux
+  gem 'unicorn'
+end
 
 group :development do
   gem "capistrano"
