@@ -1,15 +1,4 @@
 development:
-<<<<<<< HEAD
-  sessions:
-    default:
-      database: cloudesk
-      hosts:
-        - localhost:27017
-      options:
-        consistency: :strong
-  options:
-    raise_not_found_error: false
-=======
   # Configure available database sessions. (required)
   sessions:
     # Defines the default session. (required)
@@ -89,4 +78,3 @@ test:
         # low amounts for fast failures.
         max_retries: 1
         retry_interval: 0
->>>>>>> 3ff5b08f3671801bf1d81b83669e2e66cd44fda3

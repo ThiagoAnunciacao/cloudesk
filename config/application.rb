@@ -23,14 +23,7 @@ module Rails3BootstrapDeviseCancan
       
       g.test_framework :rspec, fixture: true
       g.fixture_replacement :factory_girl, dir: 'spec/factories'
-<<<<<<< HEAD
       g.orm :active_record
-      
-=======
-
-      g.orm :active_record
-
->>>>>>> 3ff5b08f3671801bf1d81b83669e2e66cd44fda3
       g.view_specs false
       g.helper_specs false
     end
