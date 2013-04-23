@@ -2,9 +2,9 @@ require "bundler/capistrano"
 
 set :application, "teste"
 
-#set :bundle_cmd, 'source $HOME/.bash_profile'
+# set :bundle_cmd, 'source $HOME/.bash_profile'
 
-#set :bundle_cmd, 'source $HOME/.bash_profile && bundle'
+# set :bundle_cmd, 'source $HOME/.bash_profile && bundle'
 
 set :scm,             :git
 set :repository,      "git@github.com:ThiagoAnunciacao/cloudesk.git"
