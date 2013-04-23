@@ -1,12 +1,14 @@
 require "bundler/capistrano"
 
+set :application, "teste"
+
 set :bundle_cmd, 'source $HOME/.bash_profile && bundle'
 
 set :scm,             :git
 set :repository,      "git@github.com:ThiagoAnunciacao/cloudesk.git"
 set :branch,          "origin/master"
 set :migrate_target,  :current
-#set :ssh_options,     { :forward_agent => true }
+set :ssh_options,     { :forward_agent => true }
 set :rails_env,       "production"
 set :deploy_to,       "/home/deployer/apps/teste"
 set :normalize_asset_timestamps, false
@@ -102,7 +104,7 @@ namespace :deploy do
 
   desc "Zero-downtime restart of Unicorn"
   task :restart, :except => { :no_release => true } do
-    run "kill -s USR2 `cat /tmp/unicorn.teste.pid`"
+    run "kill -s USR2 `cat /home/deployer/apps/teste/shared/tmp/pids/unicorn.teste.pid`"
   end
 
   desc "Start unicorn"
@@ -112,7 +114,7 @@ namespace :deploy do
 
   desc "Stop unicorn"
   task :stop, :except => { :no_release => true } do
-    run "kill -s QUIT `cat /tmp/unicorn.teste.pid`"
+    run "kill -s QUIT `cat /home/deployer/apps/teste/shared/tmp/pids/unicorn.teste.pid`"
   end
 
   namespace :rollback do
