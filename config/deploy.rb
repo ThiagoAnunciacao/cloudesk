@@ -2,7 +2,7 @@ require "bundler/capistrano"
 
 set :application, "teste"
 
-# set :bundle_cmd, 'source $HOME/.bash_profile'
+set :bundle_cmd, 'source $HOME/.bash_profile'
 
 # set :bundle_cmd, 'source $HOME/.bash_profile && bundle'
 
