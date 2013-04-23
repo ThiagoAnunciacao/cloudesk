@@ -10,7 +10,7 @@ set :scm,             :git
 set :repository,      "git@github.com:ThiagoAnunciacao/cloudesk.git"
 set :branch,          "origin/master"
 set :migrate_target,  :current
-set :ssh_options,     { :forward_agent => true }
+# set :ssh_options,     { :forward_agent => true }
 set :rails_env,       "production"
 set :deploy_to,       "/home/deployer/apps/teste"
 set :normalize_asset_timestamps, false
@@ -34,9 +34,9 @@ set(:previous_revision) { capture("cd #{current_path}; git rev-parse --short HEA
 default_environment["RAILS_ENV"] = 'production'
 
 # Use our ruby-1.9.2-p290@my_site gemset
-default_environment["PATH"]         = "/home/deployer/.rvm/gems/ruby-1.9.3-p392/bin:/home/deployer/.rvm/gems/ruby-1.9.3-p392@global/bin:/home/deployer/.rvm/rubies/ruby-1.9                           .3-p392/bin:/home/deployer/.rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/rvm/bin"
-default_environment["GEM_HOME"]     = "/home/deployer/.rvm/gems/ruby-1.9.3-p392"
-default_environment["GEM_PATH"]     = "/home/deployer/.rvm/gems/ruby-1.9.3-p392:/home/deployer/.rvm/gems/ruby-1.9.3-p392@global"
+# default_environment["PATH"]         = "/home/deployer/.rvm/gems/ruby-1.9.3-p392/bin:/home/deployer/.rvm/gems/ruby-1.9.3-p392@global/bin:/home/deployer/.rvm/rubies/ruby-1.9                           .3-p392/bin:/home/deployer/.rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/rvm/bin"
+# default_environment["GEM_HOME"]     = "/home/deployer/.rvm/gems/ruby-1.9.3-p392"
+# default_environment["GEM_PATH"]     = "/home/deployer/.rvm/gems/ruby-1.9.3-p392:/home/deployer/.rvm/gems/ruby-1.9.3-p392@global"
 default_environment["RUBY_VERSION"] = "ruby-1.9.3-p392"
 
 default_run_options[:shell] = 'bash'
