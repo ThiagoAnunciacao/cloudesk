@@ -32,11 +32,11 @@ test:
   host: db.cloudesk.com.br
 
 production:
-  adapter: mysql2
+  adapter: postgresql
   encoding: utf8
   reconnect: false
   database: cloudesk
   pool: 5
   username: cloudesk
   password: cloudesk132
-  host: db.cloudesk.com.br
+  host: localhost
