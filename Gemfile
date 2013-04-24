@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby "1.9.3"
 gem 'rails', '3.2.13'
-gem 'mysql2'
+gem 'pg'
 gem 'fog'
 gem "mongoid", "~> 3.0.0"
 group :assets do

@@ -143,8 +143,6 @@ GEM
       tzinfo (~> 0.3.22)
     moped (1.4.5)
     multi_json (1.7.2)
-    mysql2 (0.3.11)
-    mysql2 (0.3.11-x86-mingw32)
     net-scp (1.1.0)
       net-ssh (>= 2.6.5)
     net-sftp (2.1.1)
@@ -156,6 +154,8 @@ GEM
     nokogiri (1.5.9-x86-mingw32)
     origin (1.0.11)
     orm_adapter (0.4.0)
+    pg (0.15.1)
+    pg (0.15.1-x86-mingw32)
     polyglot (0.3.3)
     quiet_assets (1.0.2)
       railties (>= 3.1, < 5.0)
@@ -255,9 +255,9 @@ DEPENDENCIES
   jquery-rails
   launchy (>= 2.2.0)
   mini_magick
-  mongoid
-  mysql2
+  mongoid (~> 3.0.0)
   nokogiri
+  pg
   quiet_assets (>= 1.0.2)
   rails (= 3.2.13)
   rolify (>= 3.2.0)
