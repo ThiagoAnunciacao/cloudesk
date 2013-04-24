@@ -36,5 +36,5 @@ platforms :ruby do # linux
 end
 
 group :development do
-  gem "inploy"
+  gem "capistrano"
 end

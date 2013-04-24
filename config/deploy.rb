@@ -10,14 +10,14 @@ set :scm,             :git
 set :repository,      "git@github.com:ThiagoAnunciacao/cloudesk.git"
 set :branch,          "origin/master"
 set :migrate_target,  :current
-set :ssh_options,     { :forward_agent => true }
+# set :ssh_options,     { :forward_agent => true }
 set :rails_env,       "production"
-set :deploy_to,       "/home/deployer/apps/teste"
+set :deploy_to,       "/apps/teste"
 set :normalize_asset_timestamps, false
 
 set :user,            "deployer"
 set :group,           "staff"
-set :use_sudo,        false
+set :use_sudo,        true
 
 role :web,    "67.207.152.23"
 role :app,    "67.207.152.23"
@@ -93,7 +93,7 @@ namespace :deploy do
       mkdir -p #{latest_release}/tmp &&
       ln -s #{shared_path}/log #{latest_release}/log &&
       ln -s #{shared_path}/system #{latest_release}/public/system &&
-      ln -s #{shared_path}/pids #{latest_release}/tmp/pids &&
+      ln -s /tmp/pids #{latest_release}/tmp/pids &&
       ln -sf #{shared_path}/database.yml #{latest_release}/config/database.yml
     CMD
 
