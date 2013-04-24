@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.13'
 gem 'mysql2'
 gem 'fog'
-gem "mongoid", "~> 3.0.0"
+gem "mongoid"
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
